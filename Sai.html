@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will You Marry Me?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 1.5em;
+    }
+
+    .heart {
+      font-size: 4rem;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .button {
+      margin-top: 1em;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: #ff5e78;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">💖</div>
+  <h1>Will You Marry Me?</h1>
+  <p>From the moment I met you, I knew you were the one. You make my world brighter, my days happier, and my life more beautiful. I want to spend forever with you.</p>
+  <button class="button" onclick="alert('Yay! I love you! 💍')">Yes, I do! 💍</button>
+</body>
+</html>
